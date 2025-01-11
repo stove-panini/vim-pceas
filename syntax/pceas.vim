@@ -28,7 +28,7 @@ syn keyword PCEASInsBranch
 \ BRA BCC BCS BEQ BMI BNE BPL BSR BVC BVS JMP JSR RTI RTS
 
 " Operators
-syn match PCEASOperator "[+-<>&|=!\~\^\*]"
+syn match PCEASOperator "\(+\|-\|<\|>\|&\||\|=\|!\|\~\|\^\|\*\)"
 
 " Labels & Symbols
 syn match PCEASLabel  "^[.\!]\?\w*:"he=e-1
@@ -39,9 +39,9 @@ syn match PCEASFuncCall "\<\w\+\s*("he=e-1
 
 " Literal values
 syn match PCEASLiteral "#\a\(\w\+\)\?\>"
-syn match PCEASLiteral "#$\x\+"
-syn match PCEASLiteral "#%[01]\+"
-syn match PCEASLiteral "#d\+"
+syn match PCEASLiteral "#$\x\+\>"
+syn match PCEASLiteral "#%[01]\+\>"
+syn match PCEASLiteral "#\d\+\>"
 
 " Arithmetic
 syn match PCEASMath "\s\d\+\>"
