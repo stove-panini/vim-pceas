@@ -31,7 +31,7 @@ syn keyword PCEASInsBranch
 syn match PCEASOperator "\(+\|-\|<\|>\|&\||\|=\|!\|\~\|\^\|\*\)"
 
 " Labels & Symbols
-syn match PCEASLabel  "^[.\!]\?\w*:"he=e-1
+syn match PCEASLabel  "^[.\!@]\?\w*:"he=e-1
 syn match PCEASSymbol "\w\+\s*="he=e-1
 
 " Function calls
